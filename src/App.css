@@ -1,0 +1,6 @@
+@import '../component/Button.css';
+
+App{
+    font-family: 'poppins';
+    background:url('../src/assets/BGsite.png')
+}

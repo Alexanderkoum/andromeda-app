@@ -1,0 +1,67 @@
+
+:root{
+    --darkblue:#021F4F;
+    --vibrantblue:#00509D;
+    --dark:#010101;
+    --green:#48D845;
+    --dark-gradient:linear-gradient(var(--darkblue),var(--dark));
+    --green-gradient:linear-gradient(var(--green),var(--vibrantblue));
+    --blue-gradient:linear-gradient(var(--darkblue),var(--vibrantblue));
+}
+
+body{
+    font-family: 'poppins';
+    background:url('../src/assets/BGsite.png');
+    font-size:16px !important;
+}
+
+.container{
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+}
+
+.scrollbarnone::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+@media all and (max-weight:768px){
+    .container{
+        padding-right: calc(var(--bs-gutter-x) * 2);
+        padding-left: calc(var(--bs-gutter-x) * 2);
+    } 
+}
+
+.nav a{
+text-decoration: none;
+margin:0 15px;
+color:white;
+}
+.box-style{
+    border-radius:20px;
+    border:none;
+    border:2px solid rgba(255, 255, 255, .10);
+    padding-left:20px;
+    padding-right:20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-g-green{background:var(--green-gradient)}
+.bg-g-dark{background:var(--dark-gradient)}
+.bg-g-blue{background:var(--blue-gradient)}
+
+.numb-style{
+    border:2px solid #48D845;
+    border-radius:50%;
+    display:flex;
+    width:40px;
+    height:40px;
+    padding:30px 30px;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size:30px;
+    font-weight: bold;
+}
+
