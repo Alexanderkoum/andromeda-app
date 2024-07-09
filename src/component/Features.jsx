@@ -1,6 +1,6 @@
 import React from "react";
 import phone from "../assets/phone-mockup-2-1.png";
-import { motion } from "/framer-motion"
+import { motion } from "framer-motion"
 
 const Features = () => {
   return (

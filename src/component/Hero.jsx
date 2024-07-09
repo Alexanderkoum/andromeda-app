@@ -1,7 +1,7 @@
 import React from "react";
 import laptop from "../assets/mockup2laptop 1.png";
 import SearchBar from "./SearchBar";
-import { motion } from "/framer-motion";
+import { motion } from "framer-motion";
 import elt1 from "../assets/graphics-1.svg";
 import elt2 from "../assets/graphics-2.svg";
 
