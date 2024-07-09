@@ -10,7 +10,7 @@ import Demo from "./component/Demo";
 import Onboarding from "./component/Onboarding";
 import AppDownloadCta from "./component/AppDownloadCta";
 import About from "./component/About";
-import Footer from "./component/footer";
+import Footer from "./component/Footer";
 import {KindeProvider} from "@kinde-oss/kinde-auth-react";
 
 
