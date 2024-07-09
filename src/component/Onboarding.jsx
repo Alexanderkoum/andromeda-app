@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button";
-import { motion } from "framer-motion";
+import { motion } from "/framer-motion";
 
 const Onboarding = () => {
   return (
