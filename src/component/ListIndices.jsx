@@ -5,9 +5,9 @@ import symbol from '../assets/eurosymbol.png'
 
 const ListIndices = () => {
   const [data, setData] = useState([]);
-
+{/*https://api.polygon.io/v2/aggs/grouped/locale/global/market/fx/2023-01-09?adjusted=true&apiKey=kckFl0q8UpJ7tfILfckxA2fMoK8jwW2x*/}
   useEffect(() => {
-    axios.get('https://api.polygon.io/v2/aggs/grouped/locale/global/market/fx/2023-01-09?adjusted=true&apiKey=kckFl0q8UpJ7tfILfckxA2fMoK8jwW2x')
+    axios.get('https://api.polygon.io/v2/aggs/grouped/locale/us/market/stocks/2024-01-09?adjusted=true&apiKey=kckFl0q8UpJ7tfILfckxA2fMoK8jwW2x')
       .then(res => {
         const responseData = res.data;
         setData(responseData.results);
@@ -22,7 +22,7 @@ const ListIndices = () => {
     <div  className='scrollbarnone container d-flex gap-3 overflow-x-scroll my-5' style={{paddingTop:'10vh'}}>
       {data.map((result, index) => (
         <div key={index}>
-          <Indice symbol ={symbol} nom={result.T && result.T.split(':')[1]} price ={result.c}/>
+          <Indice nom={result.T} price ={result.c}/>
         </div>
       ))}
     </div>
